@@ -18,7 +18,7 @@ st.markdown(
 )
 
 # =====================================================
-# Fixed column mapping (from your provided "column order" table)
+# Fixed column mapping (UPDATED: order 10 original -> "CITY NAME SHIPPER")
 # Format: (order, original_column_name, new_column_name, default_value)
 # - If original is empty -> output column is blank
 # - If default_value is non-empty -> fill the whole column with that value
@@ -33,7 +33,7 @@ COLUMNS = [
     (7, "SHIPPER ADDRESS", "sender_address1", ""),
     (8, "", "sender_address2", ""),
     (9, "", "sender_district", ""),
-    (10, "sender_city", "sender_city", ""),
+    (10, "CITY NAME SHIPPER", "sender_city", ""),  # <-- updated here
     (11, "", "sender_state", "GD"),
     (12, "", "sender_zip5", ""),
     (13, "", "sender_zip4", ""),
